@@ -1,2 +1,2 @@
 # algoritmosjava_ent1
-Entregável #1 - Algoritmos  Implemente os seguintes algoritmos na linguagem Javascript e Java usando o Visual Studio Code.
+Entregável 1 - Ambientes de desenvolvimento de software - Algoritmos Java
