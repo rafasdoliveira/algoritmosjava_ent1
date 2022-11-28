@@ -5,25 +5,20 @@ import java.util.Scanner;
 public class ordenacao {
 	
 	public static void main(String[] args) {
+		int vetor[] = {1,7, 4, 5, 3, 6, 8, 10, 9, 2};
+		int aux = 0;
 		
-		try (Scanner n = new Scanner(System.in)) {
-			System.out.print("Informe a quantidade de notas");
-			
-			int qtd = n.nextInt();
-			int nota;
-			int contador = 0;
-			int i = 0;
-			
-			while(i<qtd) {
-				System.out.print("Informe uma nota");
-				nota = n.nextInt();
-				if(nota<5) {
-					contador= contador+1;
-				}
-				i=i+1;
+		for(int a = 0; a<vetor.length; a++) {
+			for(int b = 0; b<vetor.length; b++) {
+				if(vetor[a]<vetor[b]){
+				    aux=vetor[a];
+				    vetor[a]=vetor[b];
+				    vetor[b]=aux;
 			}
-			System.out.print("Quantidade de alunos aprovados: " + contador);
 		}
 	}
-	
+		for(int i=0; i<vetor.length; i++){
+		    System.out.println(+ vetor[i]+ " ");
+		}
+	}
 }
